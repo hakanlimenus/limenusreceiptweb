@@ -1,0 +1,16 @@
+{
+  "title": "Fatura Detayı",
+  "products": "Ürünler",
+  "summary": "Özet",
+  "totalDiscount": "Toplam İndirim",
+  "memberDiscount": "Üyelik İndirimi",
+  "totalTax": "KDV",
+  "totalAmount": "Toplam Tutar",
+  "relatedProducts": "Tarzını Tamamla",
+  "footerNote": "Bu fiş e-Arşiv fatura niteliğindedir.",
+  "paymentInfo": "Ödeme Bilgisi",
+  "bankName": "Banka Adı",
+  "transactionNumber": "İşlem Numarası",
+  "qrCode": "Fatura QR Kodu",
+  "openMap": "Haritada Aç"
+}

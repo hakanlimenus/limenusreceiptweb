@@ -1,0 +1,16 @@
+{
+  "title": "Receipt Detail",
+  "products": "Products",
+  "summary": "Summary",
+  "totalDiscount": "Total Discount",
+  "memberDiscount": "Membership Discount",
+  "totalTax": "VAT",
+  "totalAmount": "Total Amount",
+  "relatedProducts": "You Might Also Like",
+  "footerNote": "This receipt is a valid e-Archive invoice.",
+  "paymentInfo": "Payment Info",
+  "bankName": "Bank Name",
+  "transactionNumber": "Transaction Number",
+  "qrCode": "Receipt QR Code",
+  "openMap": "Open in Map"
+}

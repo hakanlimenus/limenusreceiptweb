@@ -1,0 +1,105 @@
+{
+  "receiptDto": {
+    "id": "1",
+    "personaId": "p-001",
+    "documentId": "doc-abc12345",
+    "externalReceiptId": "ext-abc12345",
+    "externalReceiptVersion": "v1",
+    "country": "TR",
+    "currency": "TRY",
+    "brand": {
+      "id": "lacoste",
+      "name": "Lacoste",
+      "logoUrl": "https://limenusdevstg10641.blob.core.windows.net/static/brand/logos/lacoste.svg"
+    },
+    "receiptDate": "2025-12-01T12:00:00Z",
+    "purchaseSummary": {
+      "totalAmount": 1299.99,
+      "totalTax": 150.00,
+      "totalDiscount": 100.00,
+      "totalMemberDiscount": 50.00,
+      "remainingMemberPoints": "320"
+    },
+    "storeInformation": {
+      "storeIdentifier": "lacoste-nisantasi",
+      "storeName": "Lacoste Nişantaşı",
+      "address": "Teşvikiye Mah. Abdi İpekçi Cad. No: 23, İstanbul",
+      "taxNumber": "1234567890",
+      "phoneNumber": "0212 555 55 55",
+      "coordinates": {
+        "latitude": 41.04456,
+        "longitude": 28.98573
+      }
+    },
+    "purchasedItems": {
+      "items": [
+        {
+          "name": "Nautica Erkek Bej Regular Fit Mont",
+          "itemBrand": "Nautica",
+          "itemGender": "Unisex",
+          "itemCategory": "Outerwear",
+          "price": 1300.00,
+          "image": "http://akn-nautica.a-cdn.akinoncloud.com/products/2025/11/11/80131/7d437028-590f-425c-be3b-456929dd92d3_size800x800_cropCenter.jpg",
+          "imageUrl": "http://akn-nautica.a-cdn.akinoncloud.com/products/2025/11/11/80131/7d437028-590f-425c-be3b-456929dd92d3_size800x800_cropCenter.jpg",
+          "taxRatePercentage": 18,
+          "adjustments": [
+            {
+              "label": "Kış Kampanyası",
+              "value": "-100"
+            }
+          ]
+        },
+        {
+          "name": "Nautica Erkek Kahverengi Jogger Fit Pantolon",
+          "itemBrand": "Nautica",
+          "itemGender": "Unisex",
+          "itemCategory": "Accessories",
+          "price": 549.00,
+          "image": "http://akn-nautica.a-cdn.akinoncloud.com//products/2025/11/11/82188/13d6ddde-ad91-4398-b1da-5df749df4388_size800x800_cropCenter.jpg",
+          "imageUrl": "http://akn-nautica.a-cdn.akinoncloud.com//products/2025/11/11/82188/13d6ddde-ad91-4398-b1da-5df749df4388_size800x800_cropCenter.jpg",
+          "taxRatePercentage": 18,
+          "adjustments": []
+        }
+      ]
+    },
+    "paymentInformation": {
+      "paymentMethod": "Kredi Kartı",
+      "fields": [
+        { "label": "Banka Adı", "value": "Yapı Kredi" },
+        { "label": "İşlem Numarası", "value": "TX12345678" }
+      ]
+    },
+    "customerInformation": {
+      "identifierType": "GSM",
+      "gsm": "+905551112233",
+      "personaIdentifier": null,
+      "citizenNumber": null,
+      "alternativeIdentifier": null
+    },
+    "cashRegisterInformation": {
+      "cashierCode": "kasiyer01",
+      "whatsappContactNumber": "+905551234567",
+      "fields": []
+    },
+    "footerNote": {
+      "notes": ["İyi günler dileriz!"]
+    }
+  },
+  "relatedProductDto": {
+    "id": "rp-001",
+    "documentId": "doc-abc12345",
+    "title": "İlgilenebileceğiniz Ürünler",
+    "products": [
+      {
+        "name": "Nautica Erkek Siyah Regular Fit Mont",
+        "imagePath": "https://akn-nautica.a-cdn.akinoncloud.com/products/2025/10/31/80446/fbd85870-268c-43b7-91f1-bc48962251cd_size800x800_cropCenter.jpg",
+        "productUrl": "https://www.nautica-tr.com/nautica-erkek-siyah-regular-fit-mont-j57046t"
+      },
+      {
+        "name": "Nautica Erkek Yeşil Sneaker",
+        "imagePath": "https://akn-nautica.a-cdn.akinoncloud.com/products/2025/11/03/78682/b7ffd034-e8e6-4e63-9998-e7b2eca6eeb6_size800x800_cropCenter.jpg",
+        "productUrl": "https://www.nautica-tr.com/nautica-erkek-yesil-sneaker-nt602t/"
+      }
+    ]
+  }
+}
