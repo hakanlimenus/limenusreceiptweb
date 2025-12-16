@@ -107,7 +107,7 @@ export default function ReceiptExtras({
       )}
 
       {/* Footer Note */}
-      {footerNote?.notes?.length > 0 && (
+      {Array.isArray(footerNote?.notes) && footerNote.notes.length > 0 && (
         <div className="text-xs text-gray-500 mt-2">
           {footerNote.notes[0]}
         </div>

@@ -1,28 +1,30 @@
-// app/[instance]/[shortCode]/page.tsx
+import { notFound } from 'next/navigation';
 
-import { getReceiptDetailByShortCode } from "@/lib/api";
-import ReceiptDetailPage from "@/components/ReceiptDetailPage";
-import { notFound } from "next/navigation";
-import { getTranslations } from "@/utils/i18n"; // i18n helper'ı ekle
+import ReceiptDetailPage from '@/components/ReceiptDetailPage';
+import { getReceiptDetailByShortCode } from '@/lib/api';
+import { getTranslations } from '@/utils/i18n';
 
-type Props = {
-  params: {
+type PageProps = {
+  params: Promise<{
     instance: string;
     shortCode: string;
-  };
-  searchParams?: {
+  }>;
+  searchParams?: Promise<{
     lang?: string;
-  };
+  }>;
 };
 
-export default async function Page({ params, searchParams }: Props) {
-  const { instance, shortCode } = params;
-  const lang = searchParams?.lang?.toUpperCase() || "TR";
+export default async function Page({ params, searchParams }: PageProps) {
+  // ✅ Next.js 15: params ve searchParams await edilir
+  const { instance, shortCode } = await params;
+  const resolvedSearchParams = searchParams ? await searchParams : undefined;
+
+  const lang = (resolvedSearchParams?.lang || 'TR').toUpperCase();
 
   const receiptData = await getReceiptDetailByShortCode(shortCode, lang);
   if (!receiptData) return notFound();
 
-  const t = getTranslations(lang); // ✅ Burada çeviri nesnesi alınıyor
+  const t = getTranslations(lang);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -31,7 +33,7 @@ export default async function Page({ params, searchParams }: Props) {
         related={receiptData.relatedProductDto}
         locale={lang}
         instance={instance}
-        t={t} // ✅ Çeviri nesnesi geçiliyor
+        t={t}
       />
     </div>
   );

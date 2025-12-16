@@ -11,6 +11,6 @@
   "paymentInfo": "Payment Info",
   "bankName": "Bank Name",
   "transactionNumber": "Transaction Number",
-  "qrCode": "Receipt QR Code",
+  "receiptQrTitle": "Receipt QR Code",
   "openMap": "Open in Map"
 }
